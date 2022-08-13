@@ -4,6 +4,7 @@
 # In[1]:
 
 
+from flask import Flask, render_template, request
 # flask 5000
 # jupyter 8888
 
@@ -11,6 +12,7 @@
 # In[2]:
 
 
+import joblib
 
 
 # In[3]:
