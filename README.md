@@ -297,3 +297,27 @@ X_train, Y_train = SMOTE().fit_resample(X_train, Y_train)
 ## 19. Backend (Flask)
 
 ## 20. Cloud (Heroku/Github)
+
+# Week 8 - CNN
+Measurement of loss: Gini Index v.s. Entropy
+- The smaller, the better
+- Natural log (2.718) v.s. log 
+
+- During epoch, look at cross entropy; advising weight change with entropy
+- Only when looking at accuracy, we consider false positive/negative
+
+# Week 10 - Recap
+- Feature Extraction
+- Classification - Python/Orange 
+- No Machine Learning: CNN (32, 32, 64, 64)
+- Machine Learning: 128
+- ResNet: 2048
+- VGG16: 16 layers that have weight
+- Image Embedding
+- Clustering: K-Means Clustering
+
+# Week 10 - Speech
+- Wavelength
+- Transform to a frequency domain then decode it
+- MaxPool: Blur the image
+- Transformer is suitable for fast but less accurate
