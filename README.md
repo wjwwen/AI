@@ -69,8 +69,9 @@ Methods to avoid overfitting:
 Method to check outlier:
 - Interquartile Range (IQR)
 
-Imbalance Data (Oversampling/Undersampling) - SMOTE
+Imbalance Data (Oversampling/Undersampling) - SMOTE (Synthetic Minority Over-sampling Technique)
 - Have to oversample the minority on the train set to ensure that the test set is correct.
+- With SMOTE algorithm, the minority class is augmented artificially, by constructing the new synthetic csamples randomly positioned in between one point and its k-neighbours. In other words, given a limited set of data points that belong to the class that we wish to augment, we tracae high-dimensional lines connecting the data points and we draw new samples from such lines. 
 
 ## Week 2 & 3: Neural Network
 - Two hidden layers as a means of prudence for the model to work harder
@@ -309,15 +310,38 @@ Measurement of loss: Gini Index v.s. Entropy
 # Week 10 - Recap
 - Feature Extraction
 - Classification - Python/Orange 
-- No Machine Learning: CNN (32, 32, 64, 64)
+- No Machine Learning, purely feature selection i.e., encoder, an embedding process: CNN (32, 32, 64, 64)
 - Machine Learning: 128
 - ResNet: 2048
 - VGG16: 16 layers that have weight
 - Image Embedding
 - Clustering: K-Means Clustering
 
+| CNN Customised                                                 | Embedding Resnet (2048)         | Orange - VGG (2048)         | Transformer - Google
+| -------------                                                  | -------------                   | ---------------             | ----------------------
+| 32, 32, 64, 64  (embedding process), no ML (128)               |                                 |                             |  
+
+
+| Text Sentiment                                                 | Text Classification             | Chatbot                     | WebCrawler - Beautiful Soup & NLTK
+| -------------                                                  | -------------                   | ---------------             | ----------------------
+| Python - Textblob                                              | Embedding - SKLearn             | Transformer - Facebook      |  
+| R-Afinn                                                        | Embedding - TF-IDF (10,000)     |                             |  
+| Transformer - Pipeline                                         | Embedding - BERT (768)          |                             | 
+| R-Afinn                                                        | Orange - FastText (300          |                             | 
+
+- Bert is popular as it is the first bidirectional created by Google
+- 768 hidden units 
+
+Transformers, introduced in the 2017 paper “Attention Is All You Need,” made two key contributions. 
+1. First, they made it possible to process entire sequences in parallel, making it possible to scale the speed and capacity of sequential deep learning models to unprecedented rates. 
+- Takes care of the position of the word 
+2.  “Attention mechanisms” that made it possible to track the relations between words across very long text sequences in both forward and reverse directions.
+
 # Week 10 - Speech
 - Wavelength
 - Transform to a frequency domain then decode it
 - MaxPool: Blur the image
 - Transformer is suitable for fast but less accurate
+
+# Week 11 - Recap
+- Dim 3136: extracting 3136 features
