@@ -342,6 +342,3 @@ Transformers, introduced in the 2017 paper “Attention Is All You Need,” made
 - Transform to a frequency domain then decode it
 - MaxPool: Blur the image
 - Transformer is suitable for fast but less accurate
-
-# Week 11 - Recap
-- Dim 3136: extracting 3136 features
